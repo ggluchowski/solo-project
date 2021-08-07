@@ -1,0 +1,55 @@
+.date-style {
+  max-width: 150px;
+  line-height: 1;
+  font-size: 12px;
+  border: none;
+  padding: 5px 2px 5px 18px;
+  margin-right: 18px;
+
+  &-right {
+    background-image: url(../../images/calendar.svg);
+    background-position: right center;
+    //background-position-x: -10px;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    border-left: solid 2px $color-head;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.date-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 41px;
+  border: solid 2px $color-head;
+  border-radius: 5px;
+}
+
+.position-center {
+  display: flex;
+  justify-content: center;
+}
+
+// .flex-column {
+//   flex-direction: column;
+// }
+
+// .flex-row {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.list-position {
+  display: flex;
+  flex-direction: row;
+}
+
+.chart {
+  width: 655px;
+  height: 345px;
+  background-color: indianred;
+}

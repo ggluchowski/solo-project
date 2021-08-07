@@ -1,0 +1,68 @@
+.section-header{
+  text-transform: capitalize;
+  color: $color-head;
+  font-size: 12px;
+}
+
+.category{
+  font-size: 10px;
+  color: $color-head;
+  text-transform: uppercase;
+  margin: 36px 21px 26px 21px;
+}
+
+.page-header{
+  padding: 20px 0 15px 18px;
+  text-transform: uppercase;
+  color: $color-head;
+  font-size: 12px;
+  line-height: 1;
+
+  &-small{
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 0 0 10px 0;
+    color: $color-head;
+    line-height: 1;
+  }
+}
+
+.link{
+  &-large{
+    font-size: 13px;
+    text-decoration: none;
+    color: $color-link;
+
+    &-text{
+      font-size: 13px;
+      color: $color-link !important;
+    }
+  }
+
+  &-small{
+    font-size: 11px;
+    text-decoration: none;
+    color: $color-link;
+
+    &-text{
+      font-size: 11px;
+      color: $color-link;
+    }
+  }
+
+  &-icon{
+    font-size: 15px;
+    text-decoration: none;
+    color: $color-link;
+
+    &-text{
+      font-size: 15px;
+      color: $color-link;
+    }
+  }
+}
+
+.link-large:hover, .link-small:hover, .link-icon:hover{
+  color: $color-link-hover;
+  cursor: pointer;
+}

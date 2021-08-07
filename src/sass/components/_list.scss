@@ -1,0 +1,17 @@
+.list {
+  list-style-type: none;
+  padding-left: 21px;
+
+  &-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200px;
+    justify-content: space-between;
+    border-bottom: solid 1px $color-head;
+    margin: 5px 34px 5px 34px;
+  }
+
+  &-text {
+    font-size: 12px;
+  }
+}

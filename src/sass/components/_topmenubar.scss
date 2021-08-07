@@ -1,0 +1,40 @@
+// .top-menu-bar{
+//   position: fixed;
+// }
+
+.topmenu-bar{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: calc(100vw - 174px);
+  left: 174px;
+  background-color: $color-light;
+  border-bottom: solid 2px $color-head;
+  margin-left: 0;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  border-left: solid 2px $color-head;
+
+  &-element{
+    padding: 20px 20px;
+    color: $color-head;
+    line-height: 1;
+  }
+
+  &-relative{
+    position: relative;
+  }
+
+  &-text-large{
+    font-size: 19px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1;
+  }
+
+}

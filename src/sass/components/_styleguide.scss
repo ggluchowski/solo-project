@@ -1,0 +1,44 @@
+.container-guide{
+  width: 1570px;
+  height: 920px;
+  max-width: 1570px;
+  max-height: 920px;
+  margin: 15px;
+  border: solid 1px $paragraph-color;
+  box-shadow: 0 0 10px $paragraph-color;
+  overflow-y: auto;
+  background-color: $color-light;
+}
+
+.row-new{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-nowrap{
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.row-margin{
+  margin: 5px 21px;
+}
+
+.padding-left-0{
+  padding-left: 0 !important;
+}
+
+.line{
+  border: solid 1px $paragraph-color;
+}
+
+.icon-links-modyfication::before{
+  line-height: 1.7;
+  padding: 0 5px;
+}

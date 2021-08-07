@@ -1,0 +1,129 @@
+.colors-palet{
+  font-size: 10px;
+  padding: 2px;
+
+  &-1{
+    background-color: #333333;
+    color: $color-light;
+  }
+
+  &-2{
+    background-color: #F58220;
+    color: $color-light;
+  }
+
+  &-3{
+    background-color: #DE5252;
+    color: $color-light;
+  }
+
+  &-4{
+    background-color: #979797;
+    color: $color-light;
+  }
+
+  &-5{
+    background-color: #FFA200;
+    color: $color-light;
+  }
+
+  &-6{
+    background-color: #EC7171;
+    color: $color-light;
+  }
+
+  &-7{
+    background-color: #BABABA;
+    color: $color-light;
+  }
+
+  &-8{
+    background-color: #04AE00;
+    color: $color-light;
+  }
+
+  &-9{
+    background-color: #56819F;
+    color: $color-light;
+  }
+
+  &-10{
+    background-color: #E3E3E3;
+    color: $color-head;
+  }
+
+  &-11{
+    background-color: #74B67A;
+    color: $color-light;
+  }
+
+  &-12{
+    background-color: #FF0000;
+    color: $color-light;
+  }
+
+  &-13{
+    background-color: #F5F5F2;
+    color: $color-head;
+  }
+
+  &-14{
+    background-color: #96CC9B;
+    color: $color-light;
+  }
+
+  &-15{
+    background-color: #FFFFFF;
+    color: $color-head;
+  }
+}
+
+.table-colors{
+  width: 100%;
+
+  tr{
+    height: 26px;
+  }
+}
+
+.table{
+  width: 250px;
+  border-collapse: collapse;
+  margin-left: 21px;
+
+  &-row{
+    border-top: solid 1px $color-head;
+    border-bottom: solid 1px $color-head;
+  }
+
+  &-row:hover{
+    background-color: $color-table-hover;
+    cursor: pointer;
+  }
+
+  &-head{
+    background-color: $color-table-head;
+
+    th{
+      color: $paragraph-color;
+      font-weight: bold;
+      border-left: solid 1px $color-light;
+    }
+  }
+
+  &-align-left{
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+.scroll-wrapper{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table{
+  width: 100%;
+  max-width: 100%;
+}

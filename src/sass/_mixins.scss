@@ -1,0 +1,55 @@
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  @include grid("sm");
+}
+
+@media (min-width: 768px) {
+  @include grid("md");
+}
+
+@media (min-width: 992px) {
+  @include grid("lg");
+}
+
+@media (min-width: 1200px) {
+  @include grid("xl");
+}
+
+// wykonanie marginesow i paddingow: https://medium.com/@jerrythimothy/margins-paddings-sass-mixin-16460c32507f
+
+$max: 100;
+$offset: 1;
+$unit: "px";
+
+@mixin list-loop($className, $styleName) {
+  $i: 0 !default;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+// Paddings
+@include list-loop(".p-t-", "padding-top");
+@include list-loop(".p-r-", "padding-right");
+@include list-loop(".p-b-", "padding-bottom");
+@include list-loop(".p-l-", "padding-left");
+@include list-loop(".p-x-", "padding");
+
+// Margins
+@include list-loop(".m-t-", "margin-top");
+@include list-loop(".m-r-", "margin-right");
+@include list-loop(".m-b-", "margin-bottom");
+@include list-loop(".m-l-", "margin-left");
+@include list-loop(".m-x-", "margin");

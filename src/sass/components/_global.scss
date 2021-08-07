@@ -1,0 +1,52 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $color-background-main;
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  line-height: 1.7;
+  font-weight: $paragraph-font-weight;
+  color: $paragraph-color;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.container {
+  width: 100%;
+  max-width: 1059px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-fluid{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-container{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 194px;
+  width: 100%;
+  max-width: 1059px;
+  border: solid 2px $color-head;
+  background-color: $color-light;
+  box-shadow: 0 0 10px $paragraph-color;
+  overflow-y: auto;
+  z-index: -1;
+}
+
