@@ -1,0 +1,19 @@
+.section-links {
+  display: none;
+}
+
+.link-container {
+  width: 100%;
+  width: 600px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $color-table-hover;
+  }
+}
+
+.section-links .link-container:first-child {
+  border-top: solid 2px $color-head;
+}

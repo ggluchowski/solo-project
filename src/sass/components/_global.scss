@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -31,13 +33,13 @@ body {
   padding: 0 20px;
 }
 
-.container-fluid{
+.container-fluid {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.section-container{
+.section-container {
   position: absolute;
   margin-top: 80px;
   margin-left: 194px;
@@ -50,3 +52,15 @@ body {
   z-index: -1;
 }
 
+.flex-2 {
+  flex: 2;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -7,6 +7,7 @@
   background-color: #F58220;
   border-radius: 5px;
   color: $color-light;
+  height: 41px;
 
   &-grey{
     background-color: #979797;
@@ -20,6 +21,7 @@
 
   &-orange{
     background-color: #F58220;
+    padding: 0 20px;
   }
 
   &-orange:hover{
@@ -34,7 +36,6 @@
 
   &-refresh{
     width: 41px;
-    height: 41px;
     line-height: 1;
     margin-left: 15px;
   }

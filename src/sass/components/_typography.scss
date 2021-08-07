@@ -1,24 +1,24 @@
-.section-header{
+.section-header {
   text-transform: capitalize;
   color: $color-head;
   font-size: 12px;
 }
 
-.category{
+.category {
   font-size: 10px;
   color: $color-head;
   text-transform: uppercase;
   margin: 36px 21px 26px 21px;
 }
 
-.page-header{
+.page-header {
   padding: 20px 0 15px 18px;
   text-transform: uppercase;
   color: $color-head;
   font-size: 12px;
   line-height: 1;
 
-  &-small{
+  &-small {
     text-transform: uppercase;
     font-size: 10px;
     padding: 0 0 10px 0;
@@ -27,42 +27,48 @@
   }
 }
 
-.link{
-  &-large{
-    font-size: 13px;
+.link {
+  &-large {
+    font-size: 12px;
     text-decoration: none;
     color: $color-link;
 
-    &-text{
-      font-size: 13px;
+    &-text {
+      font-size: 12px;
       color: $color-link !important;
     }
   }
 
-  &-small{
-    font-size: 11px;
+  &-small {
+    font-size: 10px;
     text-decoration: none;
     color: $color-link;
 
-    &-text{
-      font-size: 11px;
+    &-text {
+      font-size: 10px;
       color: $color-link;
     }
   }
 
-  &-icon{
-    font-size: 15px;
+  &-icon {
+    font-size: 12px;
     text-decoration: none;
     color: $color-link;
 
-    &-text{
-      font-size: 15px;
+    &-orange {
+      color: $color-link-orange;
+    }
+
+    &-text {
+      font-size: 12px;
       color: $color-link;
     }
   }
 }
 
-.link-large:hover, .link-small:hover, .link-icon:hover{
+.link-large:hover,
+.link-small:hover,
+.link-icon:hover {
   color: $color-link-hover;
   cursor: pointer;
 }
