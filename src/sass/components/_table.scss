@@ -1,129 +1,148 @@
-.colors-palet{
+.colors-palet {
   font-size: 10px;
   padding: 2px;
 
-  &-1{
+  &-1 {
     background-color: #333333;
     color: $color-light;
   }
 
-  &-2{
-    background-color: #F58220;
+  &-2 {
+    background-color: #f58220;
     color: $color-light;
   }
 
-  &-3{
-    background-color: #DE5252;
+  &-3 {
+    background-color: #de5252;
     color: $color-light;
   }
 
-  &-4{
+  &-4 {
     background-color: #979797;
     color: $color-light;
   }
 
-  &-5{
-    background-color: #FFA200;
+  &-5 {
+    background-color: #ffa200;
     color: $color-light;
   }
 
-  &-6{
-    background-color: #EC7171;
+  &-6 {
+    background-color: #ec7171;
     color: $color-light;
   }
 
-  &-7{
-    background-color: #BABABA;
+  &-7 {
+    background-color: #bababa;
     color: $color-light;
   }
 
-  &-8{
-    background-color: #04AE00;
+  &-8 {
+    background-color: #04ae00;
     color: $color-light;
   }
 
-  &-9{
-    background-color: #56819F;
+  &-9 {
+    background-color: #56819f;
     color: $color-light;
   }
 
-  &-10{
-    background-color: #E3E3E3;
+  &-10 {
+    background-color: #e3e3e3;
     color: $color-head;
   }
 
-  &-11{
-    background-color: #74B67A;
+  &-11 {
+    background-color: #74b67a;
     color: $color-light;
   }
 
-  &-12{
-    background-color: #FF0000;
+  &-12 {
+    background-color: #ff0000;
     color: $color-light;
   }
 
-  &-13{
-    background-color: #F5F5F2;
+  &-13 {
+    background-color: #f5f5f2;
     color: $color-head;
   }
 
-  &-14{
-    background-color: #96CC9B;
+  &-14 {
+    background-color: #96cc9b;
     color: $color-light;
   }
 
-  &-15{
-    background-color: #FFFFFF;
+  &-15 {
+    background-color: #ffffff;
     color: $color-head;
   }
 }
 
-.table-colors{
+.table-colors {
   width: 100%;
 
-  tr{
+  tr {
     height: 26px;
   }
 }
 
-.table{
-  width: 250px;
+.table {
   border-collapse: collapse;
   margin-left: 21px;
+  margin-right: 21px;
 
-  &-row{
+  &-row {
     border-top: solid 1px $color-head;
     border-bottom: solid 1px $color-head;
+    height: 42px;
+    font-size: 12px;
   }
 
-  &-row:hover{
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
+  &-row:hover {
     background-color: $color-table-hover;
     cursor: pointer;
   }
 
-  &-head{
-    background-color: $color-table-head;
+  &-head {
+    //background-color: $color-table-head;
+    height: 42px;
 
-    th{
-      color: $paragraph-color;
+    th {
+      color: $color-head;
       font-weight: bold;
       border-left: solid 1px $color-light;
+
+      &:hover {
+        background-color: $color-background-main;
+        color: $paragraph-color;
+        font-weight: bolder;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     }
   }
 
-  &-align-left{
+  &-align-left {
     text-align: left;
     padding-left: 10px;
   }
+
+  &-align-center {
+    text-align: center;
+  }
 }
 
-.scroll-wrapper{
+.scroll-wrapper {
   display: block;
   width: 100%;
   overflow-x: auto;
 }
 
-.scroll-wrapper table{
-  width: 100%;
+.scroll-wrapper table {
+  width: 90%;
   max-width: 100%;
 }

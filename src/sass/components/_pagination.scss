@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &-style {
+    color: $color-link;
+    //height: 41px;
+    //width: 41px;
+    text-decoration: none;
+    line-height: 1;
+    margin: auto 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 12px;
+
+    &:hover:not(.active) {
+      color: $color-link-orange;
+    }
+  }
+}
+
+.pagination a.active {
+  background-color: $color-table-hover;
+  color: $color-head;
+  font-weight: bolder;
+  border-radius: 5px;
+}
