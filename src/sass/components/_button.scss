@@ -1,53 +1,50 @@
-.btn{
+.btn {
   display: flex;
   font-size: 15px;
   min-width: 10px;
   justify-content: center;
   align-items: center;
-  background-color: #F58220;
+  background-color: #f58220;
   border-radius: 5px;
   color: $color-light;
   height: 41px;
 
-  &-grey{
+  &:hover,
+  &-grey:hover,
+  &-orange:hover,
+  &-refresh:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    cursor: pointer;
+  }
+
+  &-grey {
     background-color: #979797;
   }
 
-  &-grey:hover{
-    opacity : 0.70;
-    filter : alpha(opacity=70);
-    cursor: pointer;
-  }
-
-  &-orange{
-    background-color: #F58220;
+  &-orange {
+    background-color: #f58220;
     padding: 0 20px;
   }
 
-  &-orange:hover{
-    opacity : 0.70;
-    filter : alpha(opacity=70);
-    cursor: pointer;
+  &-disabled {
+    background-color: #e3e3e3;
   }
 
-  &-disabled{
-    background-color: #E3E3E3;
-  }
-
-  &-refresh{
+  &-refresh {
     width: 41px;
     line-height: 1;
     margin-left: 15px;
   }
-
-  &-refresh:hover{
-    opacity : 0.70;
-    filter : alpha(opacity=70);
-    cursor: pointer;
-  }
 }
 
-.dot{
+button[type="submit"] {
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dot {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -55,11 +52,11 @@
   height: 12px;
   border-radius: 50% 50%;
 
-  &-green{
+  &-green {
     background-color: $color-dot-green;
   }
 
-  &-orange{
+  &-orange {
     background-color: $color-dot-orange;
     width: 9px;
     height: 9px;
