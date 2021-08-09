@@ -20,6 +20,7 @@
 
   &-grey {
     background-color: #979797;
+    padding: 0 20px;
   }
 
   &-orange {
@@ -42,6 +43,10 @@ button[type="submit"] {
   border: none;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+button[type="button"] {
+  border: none;
 }
 
 .dot {

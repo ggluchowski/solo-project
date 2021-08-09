@@ -22,32 +22,32 @@
 
       <ul class="sidebar-list">
         <li>
-          <i class="icon-general"></i>
-          General
+          <a href="#" class="link-menu"><i class="icon-general"></i>
+            General</a>
         </li>
         <li>
-          <i class="icon-details"></i>
-          Details
+          <a href="#"><i class="icon-details"></i>
+            Details</a>
         </li>
         <li>
-          <i class="icon-links"></i>
-          Links
+          <a href="#"><i class="icon-links"></i>
+            Links</a>
         </li>
         <li>
-          <i class="icon-banners"></i>
-          Banners
+          <a href="#"><i class="icon-banners"></i>
+            Banners</a>
         </li>
         <li>
-          <i class="icon-personaldata"></i>
-          Personal data
+          <a href="#"><i class="icon-personaldata"></i>
+            Personal data</a>
         </li>
         <li>
-          <i class="icon-payout"></i>
-          Payout
+          <a href="#"><i class="icon-payout"></i>
+            Payout</a>
         </li>
         <li>
-          <i class="icon-postback"></i>
-          Postback
+          <a href="#"><i class="icon-postback"></i>
+            Postback</a>
         </li>
       </ul>
       <div class="manager">
@@ -147,8 +147,8 @@
             </div>
           </div>
           <div class="row scroll-wrapper">
-            <div class="chart m-b-30">
-
+            <div class="chart m-b-44">
+              <canvas id="earningsChart"></canvas>
             </div>
           </div>
         </div>
@@ -350,19 +350,19 @@
         <div class="position-center m-t-30">
           <div class="row flex-row form-field">
             <label class="form-label flex-1">Name</label>
-            <input type="text" name="person-name" class="input-style flex-2">
+            <input type="text" name="person-name" class="input-style flex-2" required>
           </div>
         </div>
         <div class="position-center">
           <div class="row flex-row form-field">
             <label class="form-label flex-1">Surname</label>
-            <input type="text" name="person-surname" class="input-style flex-2">
+            <input type="text" name="person-surname" class="input-style flex-2" required>
           </div>
         </div>
         <div class="position-center">
           <div class="row flex-row form-field">
             <label class="form-label flex-1">E-mail</label>
-            <input type="email" name="person-e-mail" class="input-style flex-2">
+            <input type="email" name="person-e-mail" class="input-style flex-2" required>
           </div>
         </div>
         <div class="position-center m-b-30">
@@ -407,13 +407,13 @@
         <div class="position-center m-t-30">
           <div class="row flex-row form-field">
             <label class="form-label flex-1">Password</label>
-            <input type="password" name="person-password" class="input-style flex-2">
+            <input type="password" name="person-password" class="input-style flex-2" required>
           </div>
         </div>
         <div class="position-center m-b-30">
           <div class="row flex-row form-field">
             <label class="form-label flex-1">Repeat</label>
-            <input type="text" name="person-repeat" class="input-style flex-2">
+            <input type="text" name="person-repeat" class="input-style flex-2" required>
           </div>
         </div>
 
@@ -448,69 +448,69 @@
 
       <div class="position-center flex-column m-t-29 m-l-30 m-r-30">
         <div class="scroll-wrapper">
-        <table class="table">
-          <thead class="table-head">
-            <tr>
-              <th scope="col" class="section-header table-align-left">
-                Date
-                <i class="icon-arrow-up-small p-l-10"></i>
-              </th>
-              <th scope="col" class="section-header table-align-left">Amount ($)</th>
-              <th scope="col" class="section-header table-align-left">Deal</th>
-              <th scope="col" class="section-header table-align-left">Account</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-row">
-              <td class="table-align-left">17/08/02 (12:58)</td>
-              <td class="table-align-left">34,425.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">15/08/02 (12:58)</td>
-              <td class="table-align-left">29,436.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">17/08/02 (12:58)</td>
-              <td class="table-align-left">34,425.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">15/08/02 (12:58)</td>
-              <td class="table-align-left">29,436.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">17/08/02 (12:58)</td>
-              <td class="table-align-left">34,425.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">15/08/02 (12:58)</td>
-              <td class="table-align-left">29,436.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">17/08/02 (12:58)</td>
-              <td class="table-align-left">34,425.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-align-left">15/08/02 (12:58)</td>
-              <td class="table-align-left">29,436.00</td>
-              <td class="table-align-left">cpl(200)</td>
-              <td class="table-align-left">bank</td>
-            </tr>
-          </tbody>
-        </table>
+          <table class="table">
+            <thead class="table-head">
+              <tr>
+                <th scope="col" class="section-header table-align-left">
+                  Date
+                  <i class="icon-arrow-up-small p-l-10"></i>
+                </th>
+                <th scope="col" class="section-header table-align-left">Amount ($)</th>
+                <th scope="col" class="section-header table-align-left">Deal</th>
+                <th scope="col" class="section-header table-align-left">Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="position-center m-t-28 m-b-28">
@@ -534,6 +534,34 @@
     </div>
   </section>
 
+
+  <!-- Modal -->
+
+  <div class="overlay show" id="overlay">
+    <!-- div odpowiedzialny za tło backdrop-->
+    <div class="modal show" id="quit">
+      <div class="btn-close js--close-modal">x</div>
+
+      <h4 class="section-line">Do you really want to Quite?</h4>
+
+      <div class="row flex-end m-r-0">
+        <button type="button" class="btn btn-grey js--close-modal m-r-10">
+          Cancel
+        </button>
+
+        <button type="button" class="btn btn-orange js--close-modal">
+          Quite
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

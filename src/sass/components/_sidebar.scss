@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-.sidebar{
+.sidebar {
   position: fixed;
   background-color: $color-sidebar;
   height: 100vh;
@@ -8,15 +8,14 @@
   max-width: 189px;
   margin-left: -15px;
   margin-right: -15px;
-
 }
 
-.sidebar-list{
+.sidebar-list {
   list-style-type: none;
   padding-left: 10px;
   margin-top: 0;
 
-  li{
+  li {
     font-size: 12px;
     padding: 14px 0 14px 15px;
     color: $color-head;
@@ -24,18 +23,25 @@
     margin-left: -5px;
     margin-right: -15px;
 
-    i{
+    i {
       margin-right: 19px;
     }
 
-    &:hover{
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: $color-head;
+    }
+
+    &:hover,
+    a:hover {
       //border-left: solid 5px $color-sidebar-list-orange;
       background-color: $color-sidebar-hover;
       color: $color-light;
 
-      &::before{
+      &::before {
         position: absolute;
-        content: '';
+        content: "";
         border-left: solid 5px $color-sidebar-list-orange;
         height: 48px;
         left: -5px;
@@ -45,19 +51,19 @@
   }
 }
 
-.manager{
+.manager {
   padding-left: 20px;
   padding-top: 28px;
   margin-right: -15px;
   border-top: solid 2px $color-head;
 
-  &-picture{
+  &-picture {
     position: relative;
     width: 43px;
     height: 43px;
   }
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -65,20 +71,20 @@
     border-radius: 50% 50%;
   }
 
-  &-position-text{
+  &-position-text {
     padding-left: 10px;
     margin: auto 0;
   }
 }
 
-.position{
+.position {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   align-items: center;
 }
 
-.logo{
+.logo {
   font-family: $logo-font;
   font-size: 23px;
   color: $color-light;
@@ -86,7 +92,7 @@
   line-height: 1;
 }
 
-.hamburger{
+.hamburger {
   margin-left: 46px;
   width: 18px;
   height: 16px;
@@ -95,8 +101,9 @@
   position: relative;
   color: white;
 
-  &::before, &::after{
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -105,7 +112,7 @@
     transform: translateY(5px);
   }
 
-  &::after{
+  &::after {
     transform: translateY(12px);
   }
 }
