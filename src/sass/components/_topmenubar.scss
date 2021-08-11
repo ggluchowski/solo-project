@@ -2,7 +2,7 @@
 //   position: fixed;
 // }
 
-.topmenu-bar{
+.topmenu-bar {
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -15,26 +15,29 @@
   margin-left: 0;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: row;
   border-left: solid 2px $color-head;
 
-  &-element{
+  &-justyfy {
+    justify-content: flex-end;
+  }
+
+  &-element {
     padding: 20px 20px;
     color: $color-head;
     line-height: 1;
   }
 
-  &-relative{
+  &-relative {
     position: relative;
   }
 
-  &-text-large{
+  &-text-large {
     font-size: 19px;
     padding-left: 0;
     padding-right: 0;
     line-height: 1;
   }
-
 }

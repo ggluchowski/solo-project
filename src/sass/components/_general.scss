@@ -32,6 +32,7 @@
 .position-center {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .list-position {
@@ -42,5 +43,9 @@
 .chart {
   width: 655px;
   height: 345px;
-  //background-color: indianred;
+
+  &-label {
+    width: 100%;
+    max-width: 700px;
+  }
 }

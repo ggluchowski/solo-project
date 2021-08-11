@@ -33,11 +33,12 @@
       color: $color-head;
     }
 
-    &:hover,
-    a:hover {
-      //border-left: solid 5px $color-sidebar-list-orange;
+    &:hover {
       background-color: $color-sidebar-hover;
-      color: $color-light;
+
+      a {
+        color: $color-light;
+      }
 
       &::before {
         position: absolute;

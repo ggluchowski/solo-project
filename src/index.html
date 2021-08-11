@@ -19,85 +19,90 @@
         <div class="logo">Just do it</div>
         <div class="hamburger"></div>
       </div>
+      <div class="menu-left">
+        <ul class="sidebar-list">
+          <li class="menu-list active">
+            <a href="#general-statistic"><i class="icon-general"></i>
+              General</a>
+          </li>
+          <li class="menu-list">
+            <a href="#blank"><i class="icon-details"></i>
+              Details</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-links"><i class="icon-links"></i>
+              Links</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-banners"><i class="icon-banners"></i>
+              Banners</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-personal-data"><i class="icon-personaldata"></i>
+              Personal data</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-payout"><i class="icon-payout"></i>
+              Payout</a>
+          </li>
+          <li class="menu-list">
+            <a href="#blank"><i class="icon-postback"></i>
+              Postback</a>
+          </li>
+        </ul>
 
-      <ul class="sidebar-list">
-        <li>
-          <a href="#" class="link-menu"><i class="icon-general"></i>
-            General</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-details"></i>
-            Details</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-links"></i>
-            Links</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-banners"></i>
-            Banners</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-personaldata"></i>
-            Personal data</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-payout"></i>
-            Payout</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-postback"></i>
-            Postback</a>
-        </li>
-      </ul>
-      <div class="manager">
-        <div class="page-header-small">your manager</div>
-        <div class="row p-l-20 p-t-0">
-          <div class="">
-            <div class="manager-picture">
-              <img src="/images/manager-1.jpeg" alt="manager picture">
-              <div class="dot dot-green"></div>
+
+        <div class="manager">
+          <div class="page-header-small">your manager</div>
+          <div class="row p-l-20 p-t-0">
+            <div class="">
+              <div class="manager-picture">
+                <img src="/images/manager-1.jpeg" alt="manager picture">
+                <div class="dot dot-green"></div>
+              </div>
             </div>
-          </div>
-          <div class="manager-position-text">
-            <div class="link-small-text">Mikhael E.</div>
-          </div>
+            <div class="manager-position-text">
+              <div class="link-small-text">Mikhael E.</div>
+            </div>
 
+          </div>
+          <a href="styleguide.html">StyleGUIDE</a>
         </div>
-        <a href="styleguide.html">StyleGUIDE</a>
       </div>
     </aside>
   </section>
 
   <section class="top-menu-bar">
-    <div class="col-10">
-      <div class="row topmenu-bar ">
-        <div class="menu">
-          <div class="menu-element"><i class="icon-wallet"></i></div>
-          <div class="menu-element menu-text-large">$1,500.00</div>
-          <div class="menu-element"><i class="icon-arrow-down-small"></i></div>
-        </div>
-        <div class="menu">
-          <div class="menu-element">
-            <div class="menu-relative">
-              <i class="icon-notification"></i>
-              <div class="dot dot-orange"></div>
+    <div class="topmenu-bar">
+      <div class="col-10 col-sm-12">
+        <div class="row menu-justyfy row-sm">
+          <div class="menu">
+            <div class="menu-element"><i class="icon-wallet"></i></div>
+            <div class="menu-element menu-text-large">$1,500.00</div>
+            <div class="menu-element"><i class="icon-arrow-down-small"></i></div>
+          </div>
+          <div class="menu">
+            <div class="menu-element">
+              <div class="menu-relative">
+                <i class="icon-notification"></i>
+                <div class="dot dot-orange"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="menu">
-          <div class="menu-element"><i class="icon-profile"></i></div>
-          <div class="menu-element link-large-text padding-left-0">Leonardo Dicaprio</div>
-        </div>
-        <div class="menu">
-          <div class="menu-element"><i class="icon-quit"></i></div>
-        </div>
+          <div class="menu">
+            <div class="menu-element"><i class="icon-profile"></i></div>
+            <div class="menu-element link-large-text padding-left-0">Leonardo Dicaprio</div>
+          </div>
+          <div class="menu" id="menu-quite">
+            <div class="menu-element"><i class="icon-quit"></i></div>
+          </div>
 
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="general-statistic" id="general-statistic">
+  <section class="panel general-statistic show" id="general-statistic">
     <div class="section-container">
       <div class="page-header section-line">
         general statistic
@@ -108,8 +113,10 @@
             <input type="text" class="date-style" placeholder="dd.mm.rr">
             <input type="text" class="date-style date-style-right" placeholder="dd.mm.rr">
           </div>
-          <div class="btn btn-refresh">
-            <i class="icon-refresh"></i>
+          <div class="sm-position">
+            <div class="btn btn-refresh ">
+              <i class="icon-refresh"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -139,24 +146,26 @@
         </div>
       </div>
 
-      <div class="position-center">
-        <div class="row flex-row">
-          <div class="row">
-            <div class="section-header m-b-30">
-              Earnings chart
-            </div>
-          </div>
-          <div class="row scroll-wrapper">
-            <div class="chart m-b-44">
-              <canvas id="earningsChart"></canvas>
-            </div>
+
+      <div class="row flex-column scroll-wrapper m-l-12 m-r-15 ">
+        <div class="row m-l-12 m-r-15 chart-label position-center">
+          <div class="section-header m-b-30">
+            Earnings chart
           </div>
         </div>
+
+        <div class="row m-l-12 m-r-15 position-center">
+          <div class="chart m-b-44 ">
+            <canvas class="p-l-15 p-r-15" id="earningsChart"></canvas>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </section>
 
-  <section class="section-banners" id="section-banners">
+  <section class="panel section-banners" id="section-banners">
     <div class="section-container">
       <div class="page-header section-line">
         Banners
@@ -169,7 +178,7 @@
       </div>
 
       <div class="position-center">
-        <div class="flex-column">
+        <div class="flex-column container-link">
           <div class="row section-line link-container p-l-15 p-r-15">
             <div class="section-header flex-2">Banner main</div>
             <div class="link-large flex-2">http://www.website.com/bannermain.gif</div>
@@ -230,8 +239,7 @@
     </div>
   </section>
 
-
-  <section class="section-links" id="section-links">
+  <section class="panel section-links" id="section-links">
     <div class="section-container">
       <div class="page-header section-line">
         Links
@@ -243,8 +251,8 @@
         </div>
       </div>
 
-      <div class="position-center">
-        <div class="flex-column">
+      <div class="position-center col-12">
+        <div class="flex-column container-link">
           <div class="row section-line link-container p-l-15 p-r-15">
             <div class="section-header flex-2">Home page</div>
             <div class="link-large flex-2">http://www.homepage.com</div>
@@ -338,7 +346,7 @@
     </div>
   </section>
 
-  <section class="section-personal-data" id="section-personal-data">
+  <section class="panel section-personal-data" id="section-personal-data">
     <div class="section-container">
       <div class="page-header section-line">
         personal data
@@ -428,7 +436,7 @@
     </div>
   </section>
 
-  <section class="section-payout" id="section-payout">
+  <section class="panel section-payout" id="section-payout">
     <div class="section-container">
       <div class="page-header section-line">
         Payout history
@@ -537,9 +545,9 @@
 
   <!-- Modal -->
 
-  <div class="overlay show" id="overlay">
+  <div class="overlay" id="overlay">
     <!-- div odpowiedzialny za tło backdrop-->
-    <div class="modal show" id="quit">
+    <div class="modal" id="quit">
       <div class="btn-close js--close-modal">x</div>
 
       <h4 class="section-line">Do you really want to Quite?</h4>

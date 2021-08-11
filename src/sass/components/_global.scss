@@ -31,6 +31,16 @@ body {
   max-width: 1059px;
   margin: 0 auto;
   padding: 0 20px;
+
+  &-link {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &-chart {
+    width: 100%;
+    max-width: 700px;
+  }
 }
 
 .container-fluid {
@@ -43,8 +53,9 @@ body {
   position: absolute;
   margin-top: 80px;
   margin-left: 194px;
+  //margin-right: 100px;
   width: 100%;
-  max-width: 1059px;
+  max-width: calc(100vw - 215px);
   border: solid 2px $color-head;
   background-color: $color-light;
   box-shadow: 0 0 10px $paragraph-color;
@@ -54,10 +65,12 @@ body {
 
 .flex-2 {
   flex: 2;
+  width: auto;
 }
 
 .flex-1 {
   flex: 1;
+  width: auto;
 }
 
 .flex-end {
@@ -65,6 +78,11 @@ body {
   justify-content: flex-end;
 }
 
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .show {
-  display: block;
+  display: block !important;
 }
