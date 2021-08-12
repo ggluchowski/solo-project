@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SOLO-project</title>
+  <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="vendor/css/Glyphter.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <section class="side-bar">
+    <aside class="sidebar col-2">
+      <div class="row position">
+        <div class="logo">Just do it</div>
+        <div class="hamburger"></div>
+      </div>
+      <div class="menu-left">
+        <ul class="sidebar-list">
+          <li class="menu-list active">
+            <a href="#general-statistic"><i class="icon-general"></i>
+              General</a>
+          </li>
+          <li class="menu-list">
+            <a href="#blank"><i class="icon-details"></i>
+              Details</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-links"><i class="icon-links"></i>
+              Links</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-banners"><i class="icon-banners"></i>
+              Banners</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-personal-data"><i class="icon-personaldata"></i>
+              Personal data</a>
+          </li>
+          <li class="menu-list">
+            <a href="#section-payout"><i class="icon-payout"></i>
+              Payout</a>
+          </li>
+          <li class="menu-list">
+            <a href="#blank"><i class="icon-postback"></i>
+              Postback</a>
+          </li>
+        </ul>
+
+
+        <div class="manager">
+          <div class="page-header-small">your manager</div>
+          <div class="row p-l-20 p-t-0">
+            <div class="">
+              <div class="manager-picture">
+                <img src="/images/manager-1.jpeg" alt="manager picture">
+                <div class="dot dot-green"></div>
+              </div>
+            </div>
+            <div class="manager-position-text">
+              <div class="link-small-text">Mikhael E.</div>
+            </div>
+
+          </div>
+          <a href="styleguide.html">StyleGUIDE</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="top-menu-bar">
+    <div class="topmenu-bar">
+      <div class="col-10 col-sm-12">
+        <div class="row menu-justyfy row-sm">
+          <div class="menu">
+            <div class="menu-element"><i class="icon-wallet"></i></div>
+            <div class="menu-element menu-text-large">$1,500.00</div>
+            <div class="menu-element"><i class="icon-arrow-down-small"></i></div>
+          </div>
+          <div class="menu">
+            <div class="menu-element">
+              <div class="menu-relative">
+                <i class="icon-notification"></i>
+                <div class="dot dot-orange"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="menu-element"><i class="icon-profile"></i></div>
+            <div class="menu-element link-large-text padding-left-0">Leonardo Dicaprio</div>
+          </div>
+          <div class="menu" id="menu-quite">
+            <div class="menu-element"><i class="icon-quit"></i></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel general-statistic show" id="general-statistic">
+    <div class="section-container">
+      <div class="page-header section-line">
+        general statistic
+      </div>
+      <div class="section-line position-center">
+        <div class="row m-t-32 m-b-32 m-l-15 m-r-15">
+          <div class="date-border">
+            <input type="text" class="date-style" placeholder="dd.mm.rr">
+            <input type="text" class="date-style date-style-right" placeholder="dd.mm.rr">
+          </div>
+          <div class="sm-position">
+            <div class="btn btn-refresh ">
+              <i class="icon-refresh"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-center m-t-41 m-b-75">
+        <div class="row flex-column">
+          <div class="list-position">
+            <div class="list-row">
+              <div class="section-header">Visit</div>
+              <div class="list-text">124</div>
+            </div>
+            <div class="list-row">
+              <div class="section-header">Net deposite</div>
+              <div class="list-text">564</div>
+            </div>
+          </div>
+          <div class="list-position">
+            <div class="list-row">
+              <div class="section-header">FTD</div>
+              <div class="list-text">412</div>
+            </div>
+            <div class="list-row">
+              <div class="section-header">Turn over</div>
+              <div class="list-text">435</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row flex-column scroll-wrapper m-l-12 m-r-15 ">
+        <div class="row m-l-12 m-r-15 chart-label position-center">
+          <div class="section-header m-b-30">
+            Earnings chart
+          </div>
+        </div>
+
+        <div class="row m-l-12 m-r-15 position-center">
+          <div class="chart m-b-44 ">
+            <canvas class="p-l-15 p-r-15" id="earningsChart"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="panel section-banners" id="section-banners">
+    <div class="section-container">
+      <div class="page-header section-line">
+        Banners
+      </div>
+
+      <div class="position-center">
+        <div class="btn btn-orange m-t-22 m-b-22">
+          + add new
+        </div>
+      </div>
+
+      <div class="position-center">
+        <div class="flex-column container-link">
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Banner main</div>
+            <div class="link-large flex-2">http://www.website.com/bannermain.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Sing up banner</div>
+            <div class="link-large flex-2">http://www.website.com/singup.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Banner left side</div>
+            <div class="link-large flex-2">http://www.website.com/leftside.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Vertical banner</div>
+            <div class="link-large flex-2">http://www.website.com/vert.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Front banner</div>
+            <div class="link-large flex-2">http://www.website.com/front.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Horizontal banner</div>
+            <div class="link-large flex-2">http://www.website.com/horizontal.gif</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-center">
+        <div class="btn btn-orange m-t-22 m-b-22">
+          + add new
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="panel section-links" id="section-links">
+    <div class="section-container">
+      <div class="page-header section-line">
+        Links
+      </div>
+
+      <div class="position-center">
+        <div class="btn btn-orange m-t-22 m-b-22">
+          + add new
+        </div>
+      </div>
+
+      <div class="position-center col-12">
+        <div class="flex-column container-link">
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Home page</div>
+            <div class="link-large flex-2">http://www.homepage.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Currently offer</div>
+            <div class="link-large flex-2">http://www.currently.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Blurpix</div>
+            <div class="link-large flex-2">http://www.blurpix.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Your site</div>
+            <div class="link-large flex-2">http://www.yoursite.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Google</div>
+            <div class="link-large flex-2">http://www.google.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Facebook</div>
+            <div class="link-large flex-2">http://www.facebook.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Dashboard</div>
+            <div class="link-large flex-2">http://www.dashboard.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Blurax</div>
+            <div class="link-large flex-2">http://www.blurax.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Piece of Wine</div>
+            <div class="link-large flex-2">http://www.pieceofwine.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+          <div class="row section-line link-container p-l-15 p-r-15">
+            <div class="section-header flex-2">Kolorowe Misie</div>
+            <div class="link-large flex-2">http://www.kolorowemisie.com</div>
+            <div class="flex-1 flex-end">
+              <i class="icon-links link-icon link-icon-orange"></i>
+              <i class="icon-trash link-icon m-l-5"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="position-center">
+        <div class="btn btn-orange m-t-22 m-b-22">
+          + add new
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="panel section-personal-data" id="section-personal-data">
+    <div class="section-container">
+      <div class="page-header section-line">
+        personal data
+      </div>
+
+
+      <form action="">
+
+        <div class="position-center m-t-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Name</label>
+            <input type="text" name="person-name" class="input-style flex-2" required>
+          </div>
+        </div>
+        <div class="position-center">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Surname</label>
+            <input type="text" name="person-surname" class="input-style flex-2" required>
+          </div>
+        </div>
+        <div class="position-center">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">E-mail</label>
+            <input type="email" name="person-e-mail" class="input-style flex-2" required>
+          </div>
+        </div>
+        <div class="position-center m-b-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Phone number</label>
+            <input type="tel" name="person-phone" class="input-style flex-2">
+          </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <div class="position-center m-t-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Skype</label>
+            <input type="text" name="person-skype" class="input-style flex-2">
+          </div>
+        </div>
+        <div class="position-center">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">ICQ</label>
+            <input type="text" name="person-icq" class="input-style flex-2">
+          </div>
+        </div>
+        <div class="position-center m-b-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Msn</label>
+            <input type="text" name="person-msn" class="input-style flex-2">
+          </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <div class="position-center m-t-30 m-b-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Wallet</label>
+            <input type="text" name="person-wallet" class="input-style flex-2">
+          </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <div class="position-center m-t-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Password</label>
+            <input type="password" name="person-password" class="input-style flex-2" required>
+          </div>
+        </div>
+        <div class="position-center m-b-30">
+          <div class="row flex-row form-field">
+            <label class="form-label flex-1">Repeat</label>
+            <input type="text" name="person-repeat" class="input-style flex-2" required>
+          </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <div class="position-center m-t-30 m-b-30">
+          <button type="submit" class="btn">Save</button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <section class="panel section-payout" id="section-payout">
+    <div class="section-container">
+      <div class="page-header section-line">
+        Payout history
+      </div>
+
+      <div class="section-line position-center">
+        <div class="row m-t-32 m-b-32 m-l-15 m-r-15">
+          <div class="date-border">
+            <input type="text" class="date-style" placeholder="dd.mm.rr">
+            <input type="text" class="date-style date-style-right" placeholder="dd.mm.rr">
+          </div>
+          <div class="btn btn-refresh">
+            <i class="icon-refresh"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-center flex-column m-t-29 m-l-30 m-r-30">
+        <div class="scroll-wrapper">
+          <table class="table">
+            <thead class="table-head">
+              <tr>
+                <th scope="col" class="section-header table-align-left">
+                  Date
+                  <i class="icon-arrow-up-small p-l-10"></i>
+                </th>
+                <th scope="col" class="section-header table-align-left">Amount ($)</th>
+                <th scope="col" class="section-header table-align-left">Deal</th>
+                <th scope="col" class="section-header table-align-left">Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">17/08/02 (12:58)</td>
+                <td class="table-align-left">34,425.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-align-left">15/08/02 (12:58)</td>
+                <td class="table-align-left">29,436.00</td>
+                <td class="table-align-left">cpl(200)</td>
+                <td class="table-align-left">bank</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="position-center m-t-28 m-b-28">
+          <div class="pagination">
+            <i class="icon-arrow-left pagination-style"></i>
+            <a href="#" class="pagination-style active">1</a>
+            <a href="#" class="pagination-style">2</a>
+            <a href="#" class="pagination-style">3</a>
+            <a href="#" class="pagination-style">4</a>
+            <a href="#" class="pagination-style">5</a>
+            <a href="#" class="pagination-style">6</a>
+            <a href="#" class="pagination-style">7</a>
+            <a href="#" class="pagination-style">8</a>
+            <a href="#" class="pagination-style">9</a>
+            <i class="icon-arrow-right pagination-style"></i>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Modal -->
+
+  <div class="overlay" id="overlay">
+    <!-- div odpowiedzialny za tło backdrop-->
+    <div class="modal" id="quit">
+      <div class="btn-close js--close-modal">x</div>
+
+      <h4 class="section-line">Do you really want to Quite?</h4>
+
+      <div class="row flex-end m-r-0">
+        <button type="button" class="btn btn-grey js--close-modal m-r-10">
+          Cancel
+        </button>
+
+        <button type="button" class="btn btn-orange js--close-modal">
+          Quite
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
