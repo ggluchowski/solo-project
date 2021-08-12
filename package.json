@@ -13,17 +13,22 @@
         "test:html": "html-validate src/*.html",
         "test:js": "eslint src/js/",
         "test:scss": "stylelint src/sass/",
-        "build": "npm-run-all build:* test",
+        "build": "npm-run-all build:* test delete-file",
         "build:clean": "rimraf dist && mkdirp dist",
         "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
         "build:sass": "node-sass --output-style compact -o dist/css src/sass",
         "build:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
         "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
         "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
+        "cssmin": "cleancss -o dist/css/style.min.css dist/css/style.css",
+        "uglify": "uglifyjs -o dist/js/script.min.js dist/js/script.js",
+        "imagemin": "npm run imagemin --out-dir=dist/images/ src/images/**/*.{png,jpg,gif}",
+        "build:min": "npm-run-all cssmin uglify",
         "watch": "npm-run-all build build-dev -p watch:*",
         "watch:browsersync": "browser-sync start --server dist --files \"dist/**/*\" --ignore \"dist/db/**/*\"",
         "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
-        "watch:copy": "onchange -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" -- copyfiles -a -u 1 {{changed}} dist"
+        "watch:copy": "onchange -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" -- copyfiles -a -u 1 {{changed}} dist",
+        "delete-file": "rm -f dist/css/style.css dist/js/script.js"
     },
     "keywords": [],
     "author": "",
@@ -31,10 +36,13 @@
     "devDependencies": {
         "autoprefixer": "^10.2.4",
         "browser-sync": "^2.26.3",
+        "clean-css-cli": "^5.3.3",
+        "compress-images": "^1.9.9",
         "copyfiles": "^2.1.0",
         "eslint": "^5.14.1",
         "globstar": "^1.0.0",
         "html-validate": "^2.8.0",
+        "imagemin-cli": "^7.0.0",
         "mkdirp": "^0.5.1",
         "node-sass": "^4.11.0",
         "npm-run-all": "^4.1.5",
@@ -43,7 +51,8 @@
         "postcss-cli": "^8.3.1",
         "rimraf": "^3.0.2",
         "stylelint": "^9.10.1",
-        "stylelint-scss": "^3.5.4"
+        "stylelint-scss": "^3.5.4",
+        "uglifyjs": "^2.4.11"
     },
     "dependencies": {
         "json-server": "^0.16.3"
